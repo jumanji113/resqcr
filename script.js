@@ -1,16 +1,16 @@
 var redSquare = document.getElementById("red-square");
 var blueSquare = document.getElementById("blue-square");
-const pageHeight = document.body.clientHeight;
+const pageHeight = document.wrapper.clientHeight;
 
 let scrollHeight = Math.max(
-    document.body.scrollHeight, document.documentElement.scrollHeight,
-    document.body.offsetHeight, document.documentElement.offsetHeight,
-    document.body.clientHeight, document.documentElement.clientHeight
+    document.wrapper.scrollHeight, document.documentElement.scrollHeight,
+    document.wrapper.offsetHeight, document.documentElement.offsetHeight,
+    document.wrapper.clientHeight, document.documentElement.clientHeight
   );
 let scrollWidth = Math.max(
-    document.body.scrollWidth, document.documentElement.scrollWidth,
-    document.body.offsetWidth, document.documentElement.offsetWidth,
-    document.body.clientWidth, document.documentElement.clientWidth
+    document.wrapper.scrollWidth, document.documentElement.scrollWidth,
+    document.wrapper.offsetWidth, document.documentElement.offsetWidth,
+    document.wrapper.clientWidth, document.documentElement.clientWidth
 );
 const scrollPosition = pageHeight / 2 - window.innerHeight / 2;
 
